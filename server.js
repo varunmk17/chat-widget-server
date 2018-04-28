@@ -20,7 +20,7 @@
 require('dotenv').config({silent: true});
 
 var server = require('./app');
-var port = process.env.PORT || process.env.VCAP_APP_PORT || 1331;
+var port = process.env.PORT || process.env.VCAP_APP_PORT;
 
 server.listen(port, function() {
   // eslint-disable-next-line
